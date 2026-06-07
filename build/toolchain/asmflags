@@ -1,0 +1,6 @@
+-Wno-frame-address
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+"-specs=/home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver/build/specs/picolibc.specs"

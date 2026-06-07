@@ -1,0 +1,39 @@
+Command: cmake -G Ninja -B /home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/dhruv/.espressif/python_env/idf6.1_py3.14_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver
+CMake Warning at /home/dhruv/softwares/esp-idf/tools/cmake/build.cmake:711 (message):
+  WARNING: 3 unexpected files and directories were found in the
+  "managed_components" directory: esp_driver_gpio esp_driver_uart
+  esp_driver_ledc
+
+  Content of the managed components directory is managed automatically and
+  it's not recommended to place any files there manually.  To suppress this
+  warning set the environment variable:
+  IDF_COMPONENT_SUPPRESS_UNKNOWN_FILE_WARNINGS=1
+
+Call Stack (most recent call first):
+  /home/dhruv/softwares/esp-idf/tools/cmake/project.cmake:773 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+
+Configuration Report               
+ ───────────────────────────────── 
+   Parser Version: 1               
+   Verbosity: default              
+   Defaults policy: sdkconfig      
+   Status: Finished successfully   
+                                   
+ ───────────────────────────────── 
+CMake Error at /home/dhruv/softwares/esp-idf/tools/cmake/component.cmake:494 (add_library):
+  Cannot find source file:
+
+    /home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver/main/pwm_driver_main.c
+Call Stack (most recent call first):
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Error at /home/dhruv/softwares/esp-idf/tools/cmake/component.cmake:494 (add_library):
+  No SOURCES given to target: __idf_main
+Call Stack (most recent call first):
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

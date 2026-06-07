@@ -1,0 +1,2 @@
+source /home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver/build/gdbinit/symbols
+source /home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver/build/gdbinit/connect

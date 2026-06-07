@@ -1,0 +1,8 @@
+Command: ninja all
+[1/4] cd /home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver/build && /home/dhruv/.espressif/python_env/idf6.1_py3.14_env/bin/python /home/dhruv/softwares/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver/build/partition_table/partition-table.bin /home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver/build/SemaphoreTake_driver.bin
+SemaphoreTake_driver.bin binary size 0x28740 bytes. Smallest app partition is 0x100000 bytes. 0xd78c0 bytes (84%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver/build/bootloader && /home/dhruv/.espressif/python_env/idf6.1_py3.14_env/bin/python /home/dhruv/softwares/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/dhruv/softwares/esp-idf/examples/esp_driver_design/SemaphoreTake_driver/build/bootloader/bootloader.bin
+Bootloader binary size 0x6640 bytes. 0x9c0 bytes (9%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'
