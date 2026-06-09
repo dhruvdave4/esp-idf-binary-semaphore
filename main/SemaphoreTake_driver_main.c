@@ -70,10 +70,7 @@ static void IRAM_ATTR button_isr_handler(void* arg)
 
     BaseType_t higher_priority_task_woken = pdFALSE;
 
-    xSemaphoreGiveFromISR(
-        binary_sem,
-        &higher_priority_task_woken
-    );
+    xSemaphoreGiveFromISR( binary_sem,&higher_priority_task_woken);
 
     if(higher_priority_task_woken)
     {
@@ -280,13 +277,11 @@ void app_main(void)
 
 
 
-    binary_sem =
-        xSemaphoreCreateBinary();
+    binary_sem = xSemaphoreCreateBinary();
 
     if(binary_sem == NULL)
     {
-        ESP_LOGE(TAG,
-                 "Semaphore Create Failed");
+        ESP_LOGE(TAG,"Semaphore Create Failed");
         return;
     }
  
